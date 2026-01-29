@@ -1,5 +1,5 @@
 {
-  "name": "my-root-workspace",
+  "name": "my-root",
   "description": "My Project",
   "workspaces": [
     "packages/*"
