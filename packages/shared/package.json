@@ -1,7 +1,12 @@
 {
   "name": "shared",
   "private": true,
+  "version": "0.0.1",
   "exports": {
     ".": "./src/index.ts"
+  },
+  "scripts": {
+    "echo": "echo 'Hello from shared!' && sleep 2 && echo 'Done from shared!'",
+    "build": "echo 'Building shared...' && sleep 2 && echo 'Done building shared!'"
   }
 }
