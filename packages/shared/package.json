@@ -1,7 +1,5 @@
 {
   "name": "shared",
   "private": true,
-  "exports": {
-    ".": "./src/index.ts"
-  }
+  "main": "./src/main.ts"
 }
