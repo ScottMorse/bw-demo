@@ -9,6 +9,6 @@ if (import.meta.main) {
   });
 
   for await (const { chunk, metadata } of output.text()) {
-    console.log(`[${metadata.workspace.name}] ${chunk}`);
+    process[metadata.streamName].write(`[${metadata.workspace.name}] ${chunk}`);
   }
 }
