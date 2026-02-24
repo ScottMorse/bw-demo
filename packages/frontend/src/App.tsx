@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import logo from './assets/bwunster.png';
 import './App.css';
 import { type DemoData, DEV_BACKEND_PORT } from 'shared';
 
@@ -17,17 +17,19 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={logo} className="logo" />
       </div>
-      <h1>Rspack + React + TypeScript</h1>
+      <h1>Rspack + React</h1>
       <div className="card">
         <button type="button" onClick={fetchDemoData}>
           Call backend API
         </button>
         <div className="message-container">
-          <p className="message-text">Message from backend: {message}</p>
+          <p className="message-text">
+            Message from backend: <br />
+            <br />
+            <span className="message-text-value">{message}</span>
+          </p>
         </div>
       </div>
     </div>

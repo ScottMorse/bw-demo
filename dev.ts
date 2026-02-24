@@ -1,14 +1,14 @@
-import { createFileSystemProject } from 'bun-workspaces';
+import { createFileSystemProject } from "bun-workspaces";
 
 const project = createFileSystemProject();
 
-if(import.meta.main) {
+if (import.meta.main) {
   const { output } = project.runScriptAcrossWorkspaces({
-    script: 'dev',
-    parallel: true
+    script: "dev",
+    parallel: true,
   });
 
-  for await (const { outputChunk, scriptMetadata } of output) {
-    console.log(`[${scriptMetadata.workspace.name}] ${outputChunk.decode().trim()}`);
+  for await (const { chunk, metadata } of output.text()) {
+    console.log(`[${metadata.workspace.name}] ${chunk}`);
   }
 }

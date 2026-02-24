@@ -6,9 +6,10 @@
 }
 
 .logo {
-  height: 6em;
+  height: 18rem;
   padding: 1.5em;
   will-change: filter;
+  image-rendering: pixelated;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -19,16 +20,16 @@
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a > .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo {
+    animation: logo-spin infinite 3s linear;
   }
 }
 
@@ -36,6 +37,11 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.message-text-value {
+font-size: 2rem;
+  font-weight: 600;
+}
+
+button {
+  font-size: 2rem !important;
 }

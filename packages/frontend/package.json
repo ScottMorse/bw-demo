@@ -9,24 +9,24 @@
     "preview": "rspack preview"
   },
   "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react": "catalog:frontend",
+    "react-dom": "catalog:frontend",
+    "shared": "workspace:*"
   },
   "devDependencies": {
-    "shared": "workspace:*",
-    "@eslint/js": "^9.39.1",
-    "@rspack/cli": "^1.7.4",
-    "@rspack/core": "^1.7.4",
-    "@rspack/plugin-react-refresh": "^1.6.0",
-    "@types/react": "^19.2.8",
-    "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "prettier": "^3.7.3",
-    "react-refresh": "^0.18.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0"
+    "@eslint/js": "catalog:",
+    "@rspack/cli": "catalog:frontend",
+    "@rspack/core": "catalog:frontend",
+    "@rspack/plugin-react-refresh": "catalog:frontend",
+    "@types/react": "catalog:frontend",
+    "@types/react-dom": "catalog:frontend",
+    "eslint": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:frontend",
+    "eslint-plugin-react-refresh": "catalog:frontend",
+    "globals": "catalog:frontend",
+    "prettier": "catalog:",
+    "react-refresh": "catalog:frontend",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
   }
 }
